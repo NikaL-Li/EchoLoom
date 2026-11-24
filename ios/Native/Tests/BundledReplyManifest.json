@@ -1,0 +1,226 @@
+[
+  {
+    "text": "餐放门口了，麻烦您取一下",
+    "voice": "冰糖",
+    "file": "preset_door_f.wav",
+    "seconds": 2.72,
+    "sha256": "d367d1406a98c7af7865924a0ff36255bfb867c9a127c9c1a70f3fce9dea282d"
+  },
+  {
+    "text": "餐放门口了，麻烦您取一下",
+    "voice": "苏打",
+    "file": "preset_door_m.wav",
+    "seconds": 3.2,
+    "sha256": "02176d6a716cc3962e9dabbdd74837fd9377a0dcd781f24c42cbd7c0db8673d7"
+  },
+  {
+    "text": "我在小区门口，马上到",
+    "voice": "冰糖",
+    "file": "preset_gate_f.wav",
+    "seconds": 3.04,
+    "sha256": "90c58d44f4975d7b4d6b222858ac07d37205087ffe329200517cb6ab6c08b27f"
+  },
+  {
+    "text": "我在小区门口，马上到",
+    "voice": "苏打",
+    "file": "preset_gate_m.wav",
+    "seconds": 3.2,
+    "sha256": "7dee34f97174a21e7315659750420079442941a725f250c29b04f2fdba96c8e4"
+  },
+  {
+    "text": "我拍张照给您确认",
+    "voice": "冰糖",
+    "file": "preset_photo_f.wav",
+    "seconds": 2.56,
+    "sha256": "80fa6eed8098d6916e81183a964691e69a358112a4d1bed405c9facb04b00d3e"
+  },
+  {
+    "text": "我拍张照给您确认",
+    "voice": "苏打",
+    "file": "preset_photo_m.wav",
+    "seconds": 1.92,
+    "sha256": "f81f26f3138742952acd3c4d878073c503f8d04b89df57be0c28f582a219f87c"
+  },
+  {
+    "text": "电梯需要刷卡，能帮我按一下吗",
+    "voice": "冰糖",
+    "file": "preset_elevator_f.wav",
+    "seconds": 3.52,
+    "sha256": "0328eb16261b67d21f1c6d1b4c0c9492dbd4d970875e68bdb2fd7801904e2a92"
+  },
+  {
+    "text": "电梯需要刷卡，能帮我按一下吗",
+    "voice": "苏打",
+    "file": "preset_elevator_m.wav",
+    "seconds": 3.84,
+    "sha256": "a4b1554647c0f73dc222da06138728259058049d2feee2d4b86ac0c0aa3c9f3e"
+  },
+  {
+    "text": "放门口鞋柜上了，谢谢",
+    "voice": "冰糖",
+    "file": "preset_shoe_f.wav",
+    "seconds": 2.88,
+    "sha256": "12fb535c27ebd1f9e4405d8c9bc033287e691c4543b20020d353079ae9565538"
+  },
+  {
+    "text": "放门口鞋柜上了，谢谢",
+    "voice": "苏打",
+    "file": "preset_shoe_m.wav",
+    "seconds": 2.56,
+    "sha256": "ecc4893ed5af263352b37074c1772cc5fb71f451f8e6ff23ce9d7f58653ac13b"
+  },
+  {
+    "text": "我是听障骑手，请用文字沟通",
+    "voice": "冰糖",
+    "file": "preset_deaf_f.wav",
+    "seconds": 3.84,
+    "sha256": "86773367b83cb83aa61e3af372801d12fd829f8b94b7e064d4a65f8b1b0f1586"
+  },
+  {
+    "text": "我是听障骑手，请用文字沟通",
+    "voice": "苏打",
+    "file": "preset_deaf_m.wav",
+    "seconds": 4.16,
+    "sha256": "c2ad17f7a52e9f9310ab6d8acc83188ae27aec6719e5aab151ceb5fd1bc9dae9"
+  },
+  {
+    "text": "我是听障骑手，请用文字和我沟通，谢谢。",
+    "voice": "冰糖",
+    "file": "preset_sign_f.wav",
+    "seconds": 4.8,
+    "sha256": "6b3aaec2d37f8817effd5b1ae1c0f323226c829157c1916b4cd55f6dade5daa6"
+  },
+  {
+    "text": "我是听障骑手，请用文字和我沟通，谢谢。",
+    "voice": "苏打",
+    "file": "preset_sign_m.wav",
+    "seconds": 4.8,
+    "sha256": "9637bfb84660e9e12fc1c075e8ff4bf493a66eccaadf31c7e56d4a3e5a0bd812"
+  },
+  {
+    "text": "请再说一遍，慢一点，谢谢。",
+    "voice": "冰糖",
+    "file": "preset_face_repeat_f.wav",
+    "seconds": 3.52,
+    "sha256": "f8c6a13663cc3d97de2a19657cdd9c7bc147a1f4848138b04b7465cd6c8340e1"
+  },
+  {
+    "text": "请再说一遍，慢一点，谢谢。",
+    "voice": "苏打",
+    "file": "preset_face_repeat_m.wav",
+    "seconds": 3.84,
+    "sha256": "cc70e1bb31d08b7615cd7739e21b5e378c692f2e6f55db56df1b3671d31228da"
+  },
+  {
+    "text": "请稍等，我正在打字。",
+    "voice": "冰糖",
+    "file": "preset_face_wait_f.wav",
+    "seconds": 2.88,
+    "sha256": "ebc676a1131af3700b40334b4b29f14dcf1b04bb6a2cf27cb827fd05bf8a9150"
+  },
+  {
+    "text": "请稍等，我正在打字。",
+    "voice": "苏打",
+    "file": "preset_face_wait_m.wav",
+    "seconds": 4.16,
+    "sha256": "d88c0bf068d8df2bbd7e2edb704a97df2570f30ebca73f3eabb3bf69e90ec578"
+  },
+  {
+    "text": "好的，谢谢！",
+    "voice": "冰糖",
+    "file": "preset_face_thanks_f.wav",
+    "seconds": 1.76,
+    "sha256": "bbffc1b8eb850b517e0ffc2e57fdfcb82e51db5436b7fd29cd917ccb95e7c6cd"
+  },
+  {
+    "text": "好的，谢谢！",
+    "voice": "苏打",
+    "file": "preset_face_thanks_m.wav",
+    "seconds": 2.24,
+    "sha256": "0c741ce4a9090e4a7528093aeea980570f6430f03248112c0fc4a5d975462c5e"
+  },
+  {
+    "text": "您好，我需要文字沟通，谢谢。",
+    "voice": "冰糖",
+    "file": "preset_general_intro_f.wav",
+    "seconds": 3.52,
+    "sha256": "56c1a0373ff814468644d337b6ae90d42c6eca4f72e7faeb513a4317285a393c"
+  },
+  {
+    "text": "您好，我需要文字沟通，谢谢。",
+    "voice": "苏打",
+    "file": "preset_general_intro_m.wav",
+    "seconds": 3.68,
+    "sha256": "2ebd16f7b0e4a751d985cb53a53188b7f5c8d7b049fbcf7320db16206217372e"
+  },
+  {
+    "text": "请面对我说话，我在看字幕。",
+    "voice": "冰糖",
+    "file": "preset_general_caption_f.wav",
+    "seconds": 3.2,
+    "sha256": "8b9f9602db3a1e1980f58925e8fe8914cbaa2742c355a8b8fd78c221b5e2c96c"
+  },
+  {
+    "text": "请面对我说话，我在看字幕。",
+    "voice": "苏打",
+    "file": "preset_general_caption_m.wav",
+    "seconds": 3.2,
+    "sha256": "8b8f20ab21a7f3d9d4afc4b721cf0d78de05ebd2d807bbc96f75c247dd665686"
+  },
+  {
+    "text": "可以打字给我看吗？",
+    "voice": "冰糖",
+    "file": "preset_general_type_f.wav",
+    "seconds": 2.4,
+    "sha256": "ddd7d75e4ead303250d8ea99892d60c50b40984d81d08617029f8897bcbafbd4"
+  },
+  {
+    "text": "可以打字给我看吗？",
+    "voice": "苏打",
+    "file": "preset_general_type_m.wav",
+    "seconds": 2.56,
+    "sha256": "adf2638fe224c6e504c13768b48fa3decb5312e7ed36c19a363ff6ddc2c857cb"
+  },
+  {
+    "text": "请把重要的信息写下来。",
+    "voice": "冰糖",
+    "file": "preset_general_write_f.wav",
+    "seconds": 2.72,
+    "sha256": "5fa5e0c262b9f8eaca57d1c5f3b8b5c2ccfa5b5d549053ad9f036282187af9e4"
+  },
+  {
+    "text": "请把重要的信息写下来。",
+    "voice": "苏打",
+    "file": "preset_general_write_m.wav",
+    "seconds": 2.88,
+    "sha256": "6cc1e27cf076bc2c367d479010959207583e17f9aafa330912539d7f88978886"
+  },
+  {
+    "text": "我想确认一下刚才的信息。",
+    "voice": "冰糖",
+    "file": "preset_general_confirm_f.wav",
+    "seconds": 3.2,
+    "sha256": "176655a0410e48c476bae31d813585a30f5f604376ecf1a32c95a11ea9aa0228"
+  },
+  {
+    "text": "我想确认一下刚才的信息。",
+    "voice": "苏打",
+    "file": "preset_general_confirm_m.wav",
+    "seconds": 2.72,
+    "sha256": "202e8e7bd335c9a0d97637a82a69d0bcfd09ee2d1e46b445968d028524bac17e"
+  },
+  {
+    "text": "没关系，我们慢慢说。",
+    "voice": "冰糖",
+    "file": "preset_general_patience_f.wav",
+    "seconds": 2.72,
+    "sha256": "27ccaeff59b9ed7d0b087137607fe646eca640b113f405d7842389f237d0dc4a"
+  },
+  {
+    "text": "没关系，我们慢慢说。",
+    "voice": "苏打",
+    "file": "preset_general_patience_m.wav",
+    "seconds": 2.4,
+    "sha256": "582f824643dcb02d3879f41125f2d581439202d99ea19f190801a6d167dfb913"
+  }
+]

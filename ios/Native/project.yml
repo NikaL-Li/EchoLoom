@@ -1,0 +1,48 @@
+name: 译声
+options:
+  bundleIdPrefix: com.ylct
+  deploymentTarget:
+    iOS: "18.2"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  译声:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+        excludes:
+          - Info.plist
+          - Resources
+      - path: Sources/Resources
+        buildPhase: resources
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: "译声"
+        CFBundleShortVersionString: "3.0"
+        CFBundleVersion: "15"
+        CFBundleName: "译声"
+        LSRequiresIPhoneOS: true
+        UIRequiresFullScreen: true
+        YSServiceOrigin: "https://ylct.lzc2006.cn"
+        UILaunchStoryboardName: CommunicationLaunch
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIBackgroundModes:
+          - audio
+        NSMicrophoneUsageDescription: "用于语音输入、通话语音注入和免提播报。"
+        NSSpeechRecognitionUsageDescription: "把面对面交流中对方说的话转成字幕，方便你阅读。"
+        NSPhotoLibraryUsageDescription: "用于选择订单截图并识别地址、尾号和取餐码。"
+        NSCameraUsageDescription: "用于拍摄订单小票并识别取餐信息。"
+        NSLocationWhenInUseUsageDescription: "当你点「使用当前位置」时，用大致位置查询当地天气。"
+        NSMicrophoneInjectionUsageDescription: "在你选择的兼容通话中播放输入的文字或常用语，帮助你表达。"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ylct.universal
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        IPHONEOS_DEPLOYMENT_TARGET: "18.2"

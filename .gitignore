@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.xcuserstate
+xcuserdata/
+DerivedData/
+*.xcarchive/
+*.xcresult/
+*.ipa
+*.db*
+backend/data/
+构建产物/
+界面预览/

@@ -1,0 +1,15 @@
+[Unit]
+Description=Publish the daily city wallpaper pools
+StartLimitIntervalSec=1h
+StartLimitBurst=3
+[Service]
+Type=oneshot
+User=ylct-wallpapers
+Group=ylct-wallpapers
+Restart=on-failure
+RestartSec=5min
+StateDirectory=ylct-wallpapers
+StateDirectoryMode=0755
+UMask=0022
+ExecStart=/usr/bin/python3 /opt/ylct-wallpapers/pool.py --output /var/lib/ylct-wallpapers
+NoNewPrivileges=yes
