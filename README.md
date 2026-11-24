@@ -34,16 +34,16 @@
 
 ## 从译诊到译声
 
-想看旧版，点下表的**版本号看当时的源码**，点**阶段介绍看那一版的说明**。前三版是根据原始交付文件回溯整理的标签；正式发行的安装包从 3.0 开始提供。
+**[打开全部版本 Releases](https://github.com/NikaL-Li/EchoLoom/releases)**。每个版本都有独立的功能介绍和源码。前三版是按交付文件回溯整理的历史版本；3.0 另提供未签名 IPA。
 
-| 版本源码 | 阶段介绍 | 当时能做什么 |
+| 版本与说明 | 贡献者 | 这次迭代带来了什么 |
 | --- | --- | --- |
-| [v0.1.0](https://github.com/NikaL-Li/EchoLoom/tree/v0.1.0) | [「译诊」网页原型](https://github.com/NikaL-Li/EchoLoom/blob/v0.1.0/README.md) | 在一张网页内完成就医听写、打字播报、面对面展示和会话小结。 |
-| [v1.0.0](https://github.com/NikaL-Li/EchoLoom/tree/v1.0.0) | [五人原生模块协作](https://github.com/NikaL-Li/EchoLoom/blob/v1.0.0/README.md) | 并行交付首页、场景用语、双向对话、记录与设置四组原生模块。 |
-| [v2.0.0](https://github.com/NikaL-Li/EchoLoom/tree/v2.0.0) | [原生工程整合说明](https://github.com/NikaL-Li/EchoLoom/blob/v2.0.0/README.md) | 首页、场景、对话和记录接入同一 Xcode 工程，共用状态与本地存储。 |
-| [v3.0](https://github.com/NikaL-Li/EchoLoom/tree/v3.0) | [译声正式版与下载](https://github.com/NikaL-Li/EchoLoom/releases/tag/v3.0) | 扩展到日常沟通，加入电话辅助、可视化播报进度、离线双声常用语与系统字幕教程。 |
+| [v0.1.0 · 「译诊」网页原型](https://github.com/NikaL-Li/EchoLoom/releases/tag/v0.1.0) | hejioxue | 在浏览器里完成就医听写、打字播报、面对面大字展示和会话回顾。 |
+| [v1.0.0 · 五人协作 · 原生功能分包](https://github.com/NikaL-Li/EchoLoom/releases/tag/v1.0.0) | NikaL-Li、hejioxue、IREXS-JPG、dengwj-157、poguangmy | 从网页走向 SwiftUI：并行交付首页与应急亮牌、场景与术语、双向对话、记录与设置四组模块。 |
+| [v2.0.0 · 原生整合 · 打通一次完整对话](https://github.com/NikaL-Li/EchoLoom/releases/tag/v2.0.0) | IREXS-JPG | 把四个模块接进同一 Xcode 工程。从选场景到保存会话可以连续完成，聊天后还可生成要点和导出记录。 |
+| [v3.0 · 译声通用版 · 正式版](https://github.com/NikaL-Li/EchoLoom/releases/tag/v3.0) | NikaL-Li | 覆盖日常场景；打字播报、离线双声回复、电话开场、实时字幕教程，以及可接续导航和拨号的场景资料。 |
 
-[全部标签](https://github.com/NikaL-Li/EchoLoom/tags) · [完整版本沿革](CHANGELOG.md) · [3.0 验证范围与真机测试边界](RELEASE-3.0.md)
+[各版源码标签](https://github.com/NikaL-Li/EchoLoom/tags) · [完整版本沿革](CHANGELOG.md) · [3.0 验证范围](RELEASE-3.0.md)
 
 ## 下载与运行
 
