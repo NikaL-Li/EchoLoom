@@ -1,0 +1,29 @@
+name: Yizhen
+options:
+  bundleIdPrefix: com.yizhen
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: "译诊"
+    INFOPLIST_KEY_NSMicrophoneUsageDescription: "用于听清对方说话并转成文字"
+    INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "用于把对方说的话转成文字"
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+targets:
+  Yizhen:
+    type: application
+    platform: iOS
+    sources:
+      - path: Yizhen
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yizhen.app
+        PRODUCT_NAME: Yizhen
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
