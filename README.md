@@ -1,34 +1,64 @@
-# 译声 · EchoLoom 3.0
+<p align="center"><img src="ios/Native/Sources/Resources/Brand.xcassets/AppIcon.appiconset/Yisheng.png" width="88" height="88" alt="译声的蓝白声纹图标"></p>
 
-为听障人士设计的 iPhone 沟通工具。打开「沟通」可以打字让手机说、看面对面字幕，或把手机递给对方轮流打字。电话辅助提供拨号、常用联系人、静态语音开场；通话对端的字幕由 iPhone 系统提供，应用不读取对端音轨。
+# 译声 · EchoLoom
 
-- **离线可用**：双方打字、沟通卡、已保存的场景和对话、内置 16 句常用语的男女声，以及已经生成的自定义语音。临时输入由本机系统语音播报。
-- **需要联网**：首次生成自定义短语的两种声音、更新天气和四城壁纸、骑手模式的截图识别。麦克风及语音识别能力以设备权限及系统支持为准。
-- **资料**：场景和对话需主动保存。自定义语音只在两种声音都准备好后保存；生成时不会自动播放。应用不保存现场或通话录音。
+**你打字，手机帮你说；对方开口，你可以看字幕。** 译声是为听障人士设计的 iPhone 沟通工具。在诊室可以边看字幕边回答，在安静的会议室可以两个人轮流打字，给酒店前台打电话前，也可以先准备一句开场白。对方不需要安装译声。
 
-## 团队与版本
+**[下载 3.0 正式版](https://github.com/NikaL-Li/EchoLoom/releases/tag/v3.0)** · [查看历代版本与介绍](#从译诊到译声) · [使用与编译](#下载与运行) · [开发团队](#谁在维护译声)
 
-[版本沿革](CHANGELOG.md)记录了从「译诊」网页到「译声」iPhone 应用的四份源码快照。[贡献者](AUTHORS.md)按阶段署名；后续开发见[协作流程](CONTRIBUTING.md)。
+**iPhone · iOS 18.2 起 · SwiftUI · 3.0（build 15）**。Release 同时提供源码、未签名 IPA 和 SHA-256 校验文件。
 
-## 编译 iOS 应用
+| 沟通首页 | 面对面沟通 | 场景准备 |
+| :---: | :---: | :---: |
+| ![沟通首页：风景下方是开始沟通、双方打字和电话辅助](docs/screenshots/home.jpg) | ![面对面沟通：开始听、常用回复和文字输入同时可见](docs/screenshots/conversation.jpg) | ![场景准备：可以选择购物、餐饮、出行、住宿、就医或窗口办事](docs/screenshots/scenes.jpg) |
 
-需要 macOS、Xcode 和 iOS SDK，最低运行系统 iOS 18.2。本次使用 Xcode 的 iOS 27.2 SDK 构建。打开 `ios/Native/译声.xcodeproj`，选 iPhone 模拟器运行。真机安装需要在 Signing & Capabilities 中选择自己的签名团队；GitHub Release 附件为**未签名**的 iPhoneOS Release 包。它不能直接安装，也不能直接提交 App Store Connect。
+以上为 3.0 的 iPhone 模拟器截图。首页风景和天气会变化；照片出处见[四城图库](wallpaper/README.md)。
 
-用源码重建未签名 IPA：
+## 一次对话怎么开始
 
-```sh
-python3 scripts/release.py ipa /tmp/yisheng-release
-```
-
-应用标识沿用 `com.ylct.universal`，未更改 2.x 的资料保存位置。不要卸载旧版来升级，否则会删除应用的本地数据。
-
-## 源码与自托管
-
-| 目录 | 内容 |
+| 你现在想做什么 | 在译声里怎么做 |
 | --- | --- |
-| ios/Native | 原生应用、正式工程、模拟器测试工程、功能与音频测试 |
-| backend | 适配原生客户端的可选 API 服务，使用说明见本目录 README |
-| wallpaper | 四城图库、每日生成任务、部署配置、照片归属清单与测试 |
-| scripts | 从干净源码生成源码 ZIP 或未签名 IPA 的工具 |
+| **在柜台听清对方，再回答** | 首页点「开始沟通」。默认是打字播报；想看现场字幕时点「开始听」。临时输入用系统语音直接念出，常用回复常驻在输入框上方，播报状态也能用眼睛确认。 |
+| **在安静的地方轮流聊** | 点「双方打字」，轮流把手机递给对方。这个模式不需要麦克风，也不会自动播报。只想展示一句话时，可以用沟通卡。 |
+| **打电话给酒店或熟人** | 点「电话辅助」，输入号码或从通讯录选人。可准备默认开场，也可给常用联系人单独设置。开启自动开场后，符合条件的去电接通并经过设定等待时间，且系统允许添加音频时才会播报。 |
 
-默认连接应用配置的 HTTPS 服务。自托管时，在 `ios/Native/Sources/Info.plist` 修改 `YSServiceOrigin`，并同步 `project.yml`；语音、天气、截图识别和远程相册共用这个地址。密钥只配置在服务端。详细验证步骤在 `ios/Native/Tests/README.md`。原项目许可、照片及其他素材的出处见 `NOTICES.md`。
+**电话里有两个不同的开关。** 想**看对方说什么**，需要开启 iPhone 的「实时字幕」；想**让对方听见你打的字**，需要系统允许「通话中添加音频」。译声不读取通话对端音轨。初次引导和电话辅助都有带设置截图的教程，在「我的」可以重看；可用性取决于设备、系统、语言和地区。
+
+## 出门前准备好，到现场直接用
+
+- **场景资料跟着对话走。** 例如去医院前，在「就医」里把要问的问题一行写一条。到了诊室可以逐条引用；填过地点或完整电话，还能跳转地图或拨号。内置购物、餐饮、交通出行、住宿、就医、窗口办事、工作学习，也可以自定义场景。
+- **常说的话只准备一次。** 16 条内置回复随 App 附带男女声，第一次使用也能离线播放。添加自己的句子时，MiMo 会生成两种声音并保存在本机，成功后只提示、不自动播放。内置句和自定义句能一起排序。
+- **保留自己需要的工具。** 首页上滑可以查看其他入口；外出时可看天气和城市风景。青岛、济南、上海、北京各有每日五景，未覆盖的城市或无网时显示随包青岛照片。需要配送工具的人还可开启骑手场景。
+
+**离线与隐私：** 双方打字、沟通卡、已保存资料和已生成的语音无需联网。首次生成自定义语音会把该句文字交给语音服务；天气、远程图库和骑手截图识别也需要网络。面对面转写取决于系统支持与权限。场景资料和对话由你主动保存，译声不保存现场或通话录音。
+
+## 从译诊到译声
+
+想看旧版，点下表的**版本号看当时的源码**，点**阶段介绍看那一版的说明**。前三版是根据原始交付文件回溯整理的标签；正式发行的安装包从 3.0 开始提供。
+
+| 版本源码 | 阶段介绍 | 当时能做什么 |
+| --- | --- | --- |
+| [v0.1.0](https://github.com/NikaL-Li/EchoLoom/tree/v0.1.0) | [「译诊」网页原型](https://github.com/NikaL-Li/EchoLoom/blob/v0.1.0/README.md) | 在一张网页内完成就医听写、打字播报、面对面展示和会话小结。 |
+| [v1.0.0](https://github.com/NikaL-Li/EchoLoom/tree/v1.0.0) | [五人原生模块协作](https://github.com/NikaL-Li/EchoLoom/blob/v1.0.0/README.md) | 并行交付首页、场景用语、双向对话、记录与设置四组原生模块。 |
+| [v2.0.0](https://github.com/NikaL-Li/EchoLoom/tree/v2.0.0) | [原生工程整合说明](https://github.com/NikaL-Li/EchoLoom/blob/v2.0.0/README.md) | 首页、场景、对话和记录接入同一 Xcode 工程，共用状态与本地存储。 |
+| [v3.0](https://github.com/NikaL-Li/EchoLoom/tree/v3.0) | [译声正式版与下载](https://github.com/NikaL-Li/EchoLoom/releases/tag/v3.0) | 扩展到日常沟通，加入电话辅助、可视化播报进度、离线双声常用语与系统字幕教程。 |
+
+[全部标签](https://github.com/NikaL-Li/EchoLoom/tags) · [完整版本沿革](CHANGELOG.md) · [3.0 验证范围与真机测试边界](RELEASE-3.0.md)
+
+## 下载与运行
+
+- **下载成品：** [未签名 IPA](https://github.com/NikaL-Li/EchoLoom/releases/download/v3.0/EchoLoom-3.0-unsigned.ipa) 需要自行签名才能安装到 iPhone；[3.0 源码 ZIP](https://github.com/NikaL-Li/EchoLoom/releases/download/v3.0/EchoLoom-3.0-source.zip) 对应正式版标签。升级旧通用版时请保留原应用，卸载会删除本地资料。
+- **在 Mac 上体验：** 用 Xcode 打开 `ios/Native/译声.xcodeproj`，选择 iPhone 模拟器运行。连接自己的 iPhone 时，在 Signing & Capabilities 中选择签名团队。
+- **从源码打包：** 在仓库根目录运行 `python3 scripts/release.py ipa /tmp/yisheng-release`。
+
+| 开发入口 | 去哪里看 |
+| --- | --- |
+| iPhone 客户端与验证 | [原生工程](ios/Native/) · [测试说明](ios/Native/Tests/README.md) |
+| 自托管语音、天气、识别服务 | [后端配置](backend/README.md)；客户端的服务地址由 `YSServiceOrigin` 指定 |
+| 城市照片与每日更新 | [图库、部署和照片归属](wallpaper/README.md) · [素材与许可](NOTICES.md) |
+
+## 谁在维护译声
+
+**仓库所有者与 3.0 维护者：[@NikaL-Li](https://github.com/NikaL-Li)。** 五人协作阶段的成员是 [@NikaL-Li](https://github.com/NikaL-Li)、[@hejioxue](https://github.com/hejioxue)、[@IREXS-JPG](https://github.com/IREXS-JPG)、[@dengwj-157](https://github.com/dengwj-157) 和 [@poguangmy](https://github.com/poguangmy)。
+
+[按阶段查看贡献分工](AUTHORS.md) · [参与开发与发版](CONTRIBUTING.md) · [报告问题或提出建议](https://github.com/NikaL-Li/EchoLoom/issues) · [姊妹项目：译路畅通 SilentRider](https://github.com/NikaL-Li/SilentRider)
